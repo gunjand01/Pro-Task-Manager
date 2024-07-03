@@ -1,0 +1,25 @@
+.badge {
+    background-color: #eeecec;
+    color: #767575;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.325rem;
+    cursor: pointer;
+    composes: shadow from global;
+    max-width: fit-content;
+  }
+  
+  .badgeName{
+    font-size: 12px;
+    letter-spacing: 0.0025em;
+    line-height: 16px;
+    font-weight: 400;
+  }
+  .error {
+    background-color: #cf3636;
+    color: white;
+  }
+  
+  .success {
+    background-color: #63c05b;
+    color: white;
+  }

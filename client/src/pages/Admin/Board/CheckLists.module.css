@@ -1,0 +1,46 @@
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .checklist{
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 24px;
+  }
+  
+  .button {
+    border: none;
+    display: flex;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    composes: shadow from global;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    border: 2px solid #e2e2e2;
+    border-radius: 0.75rem;
+    margin-top: 0.75rem;
+  }
+  
+  .container input[type='checkbox'] {
+    width: 1rem;
+    height: 1rem;
+    accent-color: var(--primary);
+  }
+  
+  .title{
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 24px;
+    font-weight: 400;
+  }
+  .rotate {
+    transform: rotate(180deg);
+  }

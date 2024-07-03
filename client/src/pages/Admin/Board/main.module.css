@@ -1,0 +1,177 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+  }
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.325rem;
+    margin-bottom: 1rem;
+  }
+  
+  .input input {
+    width: 100%;
+    border: 2px solid var(--neutral);
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+  }
+  
+  .input input:focus {
+    outline: none;
+  }
+
+  .button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    letter-spacing: 1px;
+    min-width: 200px;
+    white-space: normal;
+    text-align: center;
+    padding: 8px 8px 10px;
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: white;
+    border-radius: 10px;
+    font-weight: 400;
+  }
+
+  .confirmationModal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cancel{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border: 1px solid red;
+    letter-spacing: 1px;
+    min-width: 200px;
+    white-space: normal;
+    background-color: var(--success);
+    text-align: center;
+    padding: 8px 8px 10px;
+    color: red;
+    border-radius: 10px;
+    font-weight: 400;
+    margin-right: 1rem;
+  }
+
+  .addPeople{
+    border: 1px solid transparent;
+    background-color: white;
+    margin-left: 1rem;
+    color: #6c757d;
+    font-weight: 530;
+    cursor: pointer;
+  }
+
+  .addPeopleIcon {
+    width: 16px; /* Adjust size as needed */
+    height: 16px; /* Adjust size as needed */
+    color: inherit; /* Inherit color from the parent */
+  }
+
+  .addPeopleTitle{
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .groupOne,
+  .groupTwo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .welcomeUser{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: -0.005em;
+    line-height: 28px;
+  }
+
+  .date{
+    opacity: 0.4;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0em;
+    line-height: 24px;
+  }
+
+  .groupTwo {
+    margin-top: 0.5rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .board{
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.00625em;
+    line-height: 30px;
+  }
+  
+  .listbox {
+    position: relative;
+  }
+  
+  .listboxButton {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+  }
+  
+  .listboxOptions {
+    position: absolute;
+    list-style-type: none;
+    right: 0;
+    box-shadow: 0 25.6px 57.6px 0 rgb(0 0 0 / 22%),
+      0 4.8px 14.4px 0 rgb(0 0 0 / 18%);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  .active {
+    background-color: #4391ed10;
+  }
+  
+  .selected {
+    background-color: var(--primary);
+    color: white;
+    box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.45) inset;
+  }
+  
+  .listboxOption {
+    padding: 0.5rem 3rem 0.5rem 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0.5rem;
+    border-radius: 0.325rem;
+    position: relative;
+    z-index: 40;
+  }
+  
+  .checkIcon {
+    width: 2rem;
+  }
+  
+  .rotate {
+    transform: rotateX(180deg);
+  }

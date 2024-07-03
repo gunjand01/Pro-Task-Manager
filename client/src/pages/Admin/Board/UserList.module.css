@@ -1,0 +1,138 @@
+/* UserList.module.css */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adjust the gap between label and listbox */
+}
+
+.label {
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 1rem;
+    gap: 0.325rem;
+}
+
+.listbox {
+    position: relative;
+    cursor: default;
+    background-color: white;
+    border: 2px solid var(--neutral);
+    border-radius: 0.75rem;
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Ensure items are spaced correctly */
+}
+
+.icon {
+    margin-left: 20.5rem; /* Adjust spacing as needed */
+}
+
+.text {
+    flex-grow: 1;
+    color: rgb(113, 112, 112); /* Allow text to take up remaining space */
+}
+
+.down {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.options {
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 2px solid var(--neutral);
+    border-radius: 1rem;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+.option {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .optionContent {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #FFEBEB;
+    margin-right: 8px;
+    font-weight: 500;
+  }
+  
+  .email {
+    flex-grow: 1;
+    font-weight: 400;
+  }
+  
+  .assignButton {
+    padding: 4px 8px;
+    width: 6rem;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    border: 2px solid var(--neutral);
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .assignButton:hover {
+    background-color: #d3d9de;
+  }
+
+  /* .transitionEnter {
+    transition: all 0.2s;
+  } */
+  
+  .transitionEnterFrom {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  .transitionEnterTo {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .transitionLeave {
+    transition: all 0.2s;
+  }
+  
+  .transitionLeaveFrom {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .transitionLeaveTo {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  
+  .noAssignees {
+    padding: 8px;
+    text-align: center;
+    color: #999;
+  }
